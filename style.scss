@@ -20,7 +20,6 @@ body {
     color: lightgray;
     display: flex;
     align-items: center;
-    background-color: gray;
     z-index: -5;
 }
 
@@ -60,37 +59,31 @@ body {
     animation-iteration-count: infinite;
 
     span {
+        position: absolute;
+        background-color: azure;
+
         &:first-child {
-            position: absolute;
             bottom: -2.2rem;
             right: -7.5rem;
             width: 7.5rem;
             height: 2rem;
-            background-color: azure;
             border-radius: 1rem;
-            // box-shadow: 0 0.2rem 0.2rem 0rem white, -0.2rem 0 0.2rem 0.2rem white;
         }
 
         &:nth-child(2) {
-            position: absolute;
             bottom: -1rem;
             right: -7rem;
             width: 5.5rem;
             height: 2rem;
-            background-color: azure;
             border-radius: 1rem;
-            // box-shadow: 0 0.2rem 0.2rem 0rem white, -0.2rem 0 0.2rem 0.2rem white;
         }
 
         &:last-child {
-            position: absolute;
             bottom: -1rem;
             right: -6rem;
             width: 3rem;
             height: 3rem;
-            background-color: azure;
             border-radius: 50%;
-            // box-shadow: 0 -0.2rem 0.2rem 0 white;
         }
     }
 }
@@ -105,36 +98,29 @@ body {
     animation-delay: 5s;
 
     span {
+        position: absolute;
+        background-color: azure;
+
         &:first-child {
-            position: absolute;
             width: 10rem;
             height: 3rem;
-            background-color: azure;
             border-radius: 2rem;
-            // box-shadow: 0 0.2rem 0.2rem 0rem white, -0.2rem 0 0.2rem 0.2rem white;
         }
 
         &:nth-child(2) {
-            position: absolute;
             bottom: -1rem;
             right: -9rem;
             width: 7rem;
             height: 2.5rem;
-            background-color: azure;
             border-radius: 2rem;
-            // box-shadow: 0 0.2rem 0.2rem 0rem white, -0.2rem 0 0.2rem 0.2rem white;
         }
 
         &:last-child {
-            position: absolute;
             bottom: -1.5rem;
             right: -8rem;
             width: 4.5rem;
             height: 4.5rem;
-            background-color: azure;
             border-radius: 50%;
-            // box-shadow: 0 -0.2rem 0.2rem 0 white;
-
         }
     }
 }
@@ -146,10 +132,11 @@ body {
     z-index: 1;
     animation: sheep 10s linear;
     animation-iteration-count: infinite;
-    animation-delay: 10s;
+    animation-delay: 3s;
 
     .sheep-body {
         span {
+            position: absolute;
 
             &:first-child,
             &:nth-child(2),
@@ -161,35 +148,29 @@ body {
             }
 
             &:first-child {
-                position: absolute;
                 left: 2rem;
                 width: 8.5rem;
-
             }
 
             &:nth-child(2) {
-                position: absolute;
                 left: 1.5rem;
                 width: 8rem;
                 transform: rotate(90deg);
             }
 
             &:nth-child(3) {
-                position: absolute;
                 left: 1rem;
                 width: 9rem;
                 transform: rotate(40deg);
             }
 
             &:last-child {
-                position: absolute;
                 left: 1rem;
                 width: 9rem;
                 transform: rotate(140deg);
             }
         }
     }
-
 
     .body-parts {
         .head {
@@ -259,7 +240,6 @@ body {
             background-color: rgb(243, 230, 205);
             z-index: -1;
         }
-
 
         .lear-leg {
             position: absolute;
